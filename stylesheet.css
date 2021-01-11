@@ -245,7 +245,7 @@ nav a:hover{
 }
 #topics button:focus{
   outline: none;
-  text-decoration: underline;
+  color: #E55812;
 }
 #topics-content{
   width: 55%;
