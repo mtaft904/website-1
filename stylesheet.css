@@ -21,8 +21,8 @@ header{
   background-color: white;
   padding-right:20px;
   z-index: 1;
-  //border-radius: 20px;
-  box-shadow: 15px 15px 20px 0px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px;
 }
 
 nav{
@@ -74,18 +74,21 @@ nav a:hover{
 
 #prof-photo{
   width: 35%;
-  outline: 5px solid white;
+  border: 5px solid white;
   height: 100%;
   display: inline-block;
-  box-shadow: 0px 0px 20px 5px;
+  box-shadow: 0px 0px 20px 0px;
   position: relative;
+  border-radius: 20px;
+  z-index: 0;
 }
 #prof-photo img{
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: auto;
   bottom: 0px;
-  left: 0px;
+  left: 5%;
+  z-index: 1;
 }
 
 #prof-text{
@@ -94,9 +97,9 @@ nav a:hover{
   height: 100%;
   float: right;
   display: inline-block;
-  opacity: 0.8;
-  //border-radius: 10%;
-  box-shadow: 10px 10px 20px 5px #111;
+  opacity: 0.7;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #111;
 }
 #prof-text h2{
   padding: 50px 30px 10px 30px;
@@ -163,7 +166,8 @@ nav a:hover{
   height: 100%;
   width: 30%;
   position: relative;
-  box-shadow: 10px 10px 20px 0px black;
+  box-shadow: 0px 10px 20px 0px black;
+  border-radius: 20px;
 
 }
 .proj h2{
@@ -186,6 +190,7 @@ nav a:hover{
   position: absolute;
   bottom: 20px;
   line-height: 17pt;
+  border-radius: 20px;
 }
 
 .proj a{
@@ -204,7 +209,8 @@ nav a:hover{
   background-color: white;
   opacity: 0.8;
   margin: auto;
-  box-shadow: 0 10px 20px 7px;
+  box-shadow: 0 0px 20px 0px;
+  border-radius: 20px;
 }
 #about h1{
   padding-top: 50px;
@@ -366,13 +372,16 @@ li{
   padding: 15px;
   width: 30%;
   background-color: white;
-  opacity: 75%;
+  opacity: 0.7;
   text-align: center;
   font-size: 30pt;
   color: black;
   text-decoration: none;
   box-shadow: 0px 10px 20px 5px #111;
   transition: width 0.25s, font-size 0.25s;
+  border-radius: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
 }
 
 .item:hover{
@@ -390,4 +399,5 @@ footer {
   height: 30px;
   text-align: center;
   padding: 10px;
+  font-family: "Open Sans", sans-serif;
 }
