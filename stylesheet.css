@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@100;300;400;600&family=Open+Sans:wght@300;400;600&family=Raleway:wght@100;200;400&display=swap');
+
+
+body{
+  background-image: url(clouds.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  z-index: -10;
+  overflow-x: hidden;
+}
+
+
+header{
+  width: 90%;
+  margin: 50px auto;
+  height: 100px;
+  opacity: 0.5;
+  background-color: white;
+  padding-right:20px;
+  z-index: 1;
+  //border-radius: 20px;
+  box-shadow: 15px 15px 20px 0px;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  align-items: center;
+  padding-left: 20px;
+}
+
+nav a{
+  background-color: inherit;
+  text-decoration: none;
+  color: black;
+  border: none;
+  margin: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 1;
+  transition: font-size 0.2s;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+}
+
+nav a:hover{
+  color: #E55812;
+  font-size: 30px;
+}
+
+.blank{
+  flex-grow: 100;
+}
+
+#madeleine{
+  font-size: 90px;
+  position: relative;
+  padding-left: 175px;
+  color: white;
+  text-shadow: 0px 10px 20px #444;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+#profile{
+  height: 350px;
+  padding: 100px 175px;
+}
+
+#prof-photo{
+  width: 35%;
+  outline: 5px solid white;
+  height: 100%;
+  display: inline-block;
+  box-shadow: 0px 0px 20px 5px;
+  position: relative;
+}
+#prof-photo img{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  left: 0px;
+}
+
+#prof-text{
+  background-color: white;
+  width: 55%;
+  height: 100%;
+  float: right;
+  display: inline-block;
+  opacity: 0.8;
+  //border-radius: 10%;
+  box-shadow: 10px 10px 20px 5px #111;
+}
+#prof-text h2{
+  padding: 50px 30px 10px 30px;
+  font-size: 40px;
+  color: #E55812;
+  font-family: 'Cabin', sans-serif;
+}
+
+#prof-text p{
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 950px){
+  #prof-text p{
+    font-size: 15px;
+  }
+  li{
+    font-size: 20pt;
+  }
+}
+@media only screen and (max-width: 720px){
+  #prof-text p{
+    font-size: 10px;
+  }
+  #prof-text h2{
+    font-size: 20px;
+  }
+
+}
+
+
+#projects{
+  height: 850px;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+
+#projects h1{
+  padding-top: 80px;
+  font-size: 100px;
+  color: white;
+  margin-left: 5%;
+  text-shadow: 0px 10px 20px #444;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+
+}
+
+#projects-flex{
+  width: 80%;
+  height: 60%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.proj{
+  border: 2px solid white;
+  height: 100%;
+  width: 30%;
+  position: relative;
+  box-shadow: 10px 10px 20px 0px black;
+
+}
+.proj h2{
+  font-size: 30pt;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  position: relative;
+  top: -40px;
+}
+
+.proj p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  margin: 0 15px;
+  padding: 10px;
+  opacity: 80%;
+  background-color: white;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20px;
+  line-height: 17pt;
+}
+
+.proj a{
+  color: #E55812;
+  text-decoration: none;
+}
+
+.proj a:hover{
+  text-decoration: underline;
+}
+
+/*About Me div*/
+#about {
+  width: 90%;
+  height: 800px;
+  background-color: white;
+  opacity: 0.8;
+  margin: auto;
+  box-shadow: 0 10px 20px 7px;
+}
+#about h1{
+  padding-top: 50px;
+  font-size: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+#about-flex{
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+#topics{
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 3px solid #E55812;
+
+}
+
+#topics button{
+  padding: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  transition: font-size 0.2s;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 200;
+}
+
+#topics button:hover{
+  color: #E55812;
+  font-size: 35px;
+}
+#topics button:focus{
+  outline: none;
+  text-decoration: underline;
+}
+#topics-content{
+  width: 55%;
+}
+#topics-content a{
+  text-decoration: none;
+  color: #E55812;
+}
+#topics-content a:hover{
+  text-decoration: underline;
+}
+#paragraph{
+  font-size: 30pt;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+
+}
+.hobby {
+  display: block;
+  width: 90%;
+  margin: auto 0;
+  height: 30%;
+  overflow: hidden;
+}
+
+.hobby-title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 200px;
+  font-family: 'Raleway' , sans-serif;
+  font-weight: 200;
+  text-decoration: underline;
+  text-decoration-color: #E55812;
+
+}
+
+.hobby-p{
+  width: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  line-height: 16pt;
+}
+#activities-div p{
+  padding: 50px 50px 0 50px;
+  font-size: 15pt;
+  font-family: 'Open-Sans', sans-serif;
+  line-height: 25px;
+}
+.bold{
+  font-weight: 300;
+  background-color: #E09D90;
+}
+#classes-div p{
+  padding: 50px 50px 0 50px;
+  font-size: 15pt;
+  font-family: 'Open-Sans', sans-serif;
+  line-height: 25px;
+}
+ul{
+  padding: 50px;
+  font-family: 'Raleway' , sans-serif;
+  font-weight: 200;
+  font-size: 25pt;
+  line-height: 35pt;
+}
+li{
+  display: list-item;
+  list-style-type: circle;
+}
+#resume-div p{
+  padding: 50px 50px 0 50px;
+  font-size: 15pt;
+  font-family: 'Open-Sans', sans-serif;
+  line-height: 25px;
+}
+#interests-div p{
+  padding: 50px 50px 0 50px;
+  font-size: 15pt;
+  font-family: 'Open-Sans', sans-serif;
+  line-height: 25px;
+}
+
+
+/*contact me div*/
+#contact{
+  width: 90%;
+  height: 500px;
+  padding-bottom: 200px;
+  margin: auto;
+}
+
+
+#contact h1{
+  font-size: 100px;
+  color: white;
+  text-shadow: 0px 10px 20px #444;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+#links{
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: space-around;
+  height: 60%;
+}
+
+.item{
+  margin: 20px;
+  padding: 15px;
+  width: 30%;
+  background-color: white;
+  opacity: 75%;
+  text-align: center;
+  font-size: 30pt;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0px 10px 20px 5px #111;
+  transition: width 0.25s, font-size 0.25s;
+}
+
+.item:hover{
+  width: 35%;
+  font-size: 35pt;
+}
+
+.item:active{
+  color: #CA5753;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
+}

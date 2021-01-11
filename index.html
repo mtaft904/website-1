@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.js"></script>-->
+    <title>My Website 2.0</title>
+  </head>
+  <body id="body">
+    <div id="background-img" ></div>
+    <header id="header">
+      <nav>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact me</a>
+        <div class="blank"></div>
+      </nav>
+    </header>
+    <main id="main">
+      <h1 id="madeleine">Hi, I'm Madeleine.</h1>
+      <div id="profile">
+        <div id="prof-photo">
+          <img src="myself.png" alt="photo of myself"></img>
+        </div>
+        <div id="prof-text">
+          <h2>Welcome!</h2>
+          <p>My name is Madeleine, and I am a sophomore at Cornell University studying computer science. I am eager to help improve the world through technology and am always looking for new projects.</p>
+          <p> Take a look through my website to learn some more about me. </p>
+        </div>
+      </div>
+      <div id="about">
+        <h1>About Me.</h1>
+        <div id="about-flex">
+          <div id="topics">
+            <button class="topic">activities</button>
+            <script id="activities" type="text/html">
+              <p>At Cornell, I am part of a project team called <span class="bold">Cornell ChemE Car</span>, where we create a small car that runs entirely on chemical reactions. I am <span class="bold">Head of Philanthropy of Alpha Omega Epsilon</span>, a social and professional sorority for women in engineering. I am also on the finance team for <span class="bold">Big Red Hacks</span>, Cornell's largest hackathon, and I am a <span class="bold">Peer Advisor</span> in the College of Engineering. I am also soon to be Social Media Chair for the <span class="bold">Cornell Poker Association</span>.</p>
+              <p>Outside of these organizations, I have a variety of hobbies including baking, hiking, or playing cards, and am always looking for new hobbies to try. Check out the Hobbies tab to see more!</p>
+            </script>
+            <button class="topic">interests</button>
+            <script id="interests" type="text/html">
+              <p>I'm still figuring out what path is right for me. However I'm currently looking for internships or work and im interested in all of the following areas.</p>
+              <ul>
+                <li>Software Development</li>
+                <li>Artificial Intelligence/Machine Learning</li>
+                <li>UI/UX Design</li>
+                <li>Cognitive Science</li>
+                <li>And more...</li>
+              </ul>
+            </script>
+            <button class="topic">hobbies</button>
+            <script id="hobbies" type="text/html">
+            <div class="hobby">
+              <div style='width: 30%; float: left; text-align: right;padding-left: 20%'>
+                <h3 class="hobby-title">Piano</h3>
+                <p class="hobby-p">Check out this video of me playing Gershwin's Rhapsody in Blue!</p>
+              </div>
+              <iframe width="45%" height="auto" src="https://www.youtube.com/embed/_-UY3dP3UEQ" frameborder="0" style="float: right" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="hobby">
+              <div style='width: 30%; float: left; text-align: right;padding-left: 20%'>
+                <h3 class="hobby-title">Art</h3>
+                <p class="hobby-p">Watch me paint a mural!</p>
+              </div>
+              <iframe width="45%" height="auto" src="https://www.youtube.com/embed/8OkoM5-QYf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="float: right;" allowfullscreen></iframe>
+            </div>
+            <div class="hobby">
+              <div style='width: 30%; float: left; text-align: right;padding-left: 20%'>
+              <h3 class="hobby-title">Travelling</h3>
+              <p class="hobby-p">Among my favorite trips was one to Peru in 2014. Here is me at Machu Picchu after hiking the Inca Trail!</p>
+              </div>
+                  <img width="35%" height="auto" src="machupicchu.jpeg" style="float:right; margin-right: 65px"></img>
+            </div>
+            </script>
+            <button class="topic">current classes</button>
+            <script id="classes" type="text/html">
+              <p>Currently I am taking the following classes. Feel free to ask me about any of them!</p>
+              <ul>
+                <li>Discrete Structures</li>
+                <li>Data Structures and Functional Programming</li>
+                <li>Intro to Cognitive science</li>
+                <li>English Words: Histories and Mysteries</li>
+                <li>UNIX Tools and Scripting</li>
+              </ul>
+            </script>
+            <button class="topic">resume</button>
+            <script id="resume">
+              <p>Check out my <a href="Taft_Madeleine_Resume.pdf" target="_blank">Resume</a> to see some more of my accomplishments!</p>
+              <iframe src="Taft_Madeleine_Resume.pdf" width="75%" height="400px" style="margin: auto;display: block; padding-top: 50px;" allowfullscreen></iframe>
+            </script>
+          </div>
+          <div id="topics-content">
+            <h2 id="paragraph" style="margin-top: 40%">Click on a topic to find out more about me!</h2>
+            </div>
+          </div>
+        </div>
+      <div id="projects">
+        <h1>My Projects.</h1>
+        <div id="projects-flex">
+          <div class="proj">
+            <h2>This Website</h2>
+            <img alt="website screenshot" src="website.png" width="75%" height="auto" style="display: block; position: relative; margin: auto; top: 35px;border: 5px solid white; box-shadow: 0 0 20px 5px black; opacity: 80%;"></img>
+            <p>This website is my first attempt at a real website. I taught myself HTML, CSS, and Javascript in the process. As I continue to learn more Web Development skills, I will continue to update this website.<br><br>Stay tuned for more websites coming in the future!</p>
+          </div>
+          <div class="proj">
+            <h2>Scientific Calculator</h2>
+            <img alt="calculator screenshot" src="calculator.png" width="80%" height="auto" style="display: block; position: relative; margin:auto; top: -20px; box-shadow: 0 0 20px 0px black; border-radius: 15px"></img>
+            <p>To practice my programming skills some more, I created a simple scientific calculator using Javascript (plus some HTML and CSS). Check out the code on my GitHub <a href="https://github.com/mtaft904/calculator" target="_blank">here</a>!</p>
+          </div>
+          <div class="proj">
+            <h2>Goal Buddy</h2>
+            <img alt="goal buddy app" src="goalbuddy.png" width="auto" height="55%" style="margin: auto;margin-bottom:20px; display: block; position: relative; top: -10px"></img>
+            <p>Goal Buddy is a prototype app design created using Marvel. The app allows people who are struggling to achieve a goal to find a partner for motivation and encouragement. Check out the design <a href="https://marvelapp.com/prototype/9a9ej29" target="_blank">here</a>.</p>
+          </div>
+        </div>
+        <h4 style="display: block; text-align: center;color: white; font-size: 20pt; font-family: 'Open Sans', sans-serif;">More projects coming soon!</h4>
+      </div>
+      <div id="contact">
+        <h1>Contact Me!</h1>
+        <div id="links">
+          <a target="_blank" class="item" href="https://www.linkedin.com/in/madeleinetaft/">LinkedIn</a>
+          <a target="_blank" class="item" href="https://github.com/mtaft904">GitHub</a>
+          <a href="mailto: mtaft904@gmail.com" class="item">Email</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h5>Created by Madeleine Taft | January 10, 2021</h5>
+    </footer>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
